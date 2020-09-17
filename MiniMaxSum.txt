@@ -1,0 +1,11 @@
+void miniMaxSum(int arr_count, int* arr) {
+    int minimum =0, maximum = 0;
+    
+    for(int i=0; i<arr_count; i++){
+        minimum+= arr[i];
+        maximum+= arr[i-1-i];
+    }
+    printf("%d", minimum);
+    printf(" ");
+    printf("%d", maximum); 
+}
